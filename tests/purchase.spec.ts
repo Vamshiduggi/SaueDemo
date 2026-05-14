@@ -4,6 +4,7 @@ import { ProductsPage } from '../pages/productsPage';
 import { CartPage } from '../pages/cartPage';
 import { CheckoutPage } from '../pages/checkoutPage';
 
+// Testing the Purchases
 test('Full checkout flow: Sort, Add to Cart, and Purchase', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const productsPage = new ProductsPage(page);
