@@ -32,5 +32,6 @@ export class ProductsPage {
   async addSpecificItemsToCart() {
     await this.addBackpackBtn.click();
     await this.addBikeLightBtn.click();
+    await this.bolttshirt.click();
   }
 }
