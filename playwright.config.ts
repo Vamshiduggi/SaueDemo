@@ -1,5 +1,8 @@
 /// <reference types="node" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> 439b54b (Add Playwright POM framework and test specs)
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -24,16 +27,26 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+<<<<<<< HEAD
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+=======
+  reporter: [['html', { outputFolder: 'playwright-report' }]],  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+>>>>>>> 439b54b (Add Playwright POM framework and test specs)
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+<<<<<<< HEAD
     trace: 'on',
     headless:false,
   },
+=======
+    trace: 'on-first-retry',
+    screenshot: 'only-on-failure',
+    headless:false,
+>>>>>>> 439b54b (Add Playwright POM framework and test specs)
 
   /* Configure projects for major browsers */
   projects: [
@@ -42,6 +55,7 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
+<<<<<<< HEAD
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
@@ -51,6 +65,17 @@ export default defineConfig({
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
     // },
+=======
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },
+>>>>>>> 439b54b (Add Playwright POM framework and test specs)
 
     /* Test against mobile viewports. */
     // {

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "mouse-bottle",
+=======
+  "name": "saucedemo",
+>>>>>>> 439b54b (Add Playwright POM framework and test specs)
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,10 +12,19 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+<<<<<<< HEAD
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.7.0",
     "allure-commandline": "^2.40.0",
     "allure-playwright": "^3.8.0"
+=======
+  "dependencies": {
+    "playwright": "^1.60.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.0"
+>>>>>>> 439b54b (Add Playwright POM framework and test specs)
   }
 }
